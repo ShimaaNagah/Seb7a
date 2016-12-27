@@ -24,16 +24,11 @@ public class MainActivity extends AppCompatActivity {
         final Button button4 = (Button) findViewById(R.id.button4);
         final Button reset_button = (Button) findViewById(R.id.reset_button);
 
-        button1.setText("سبحان الله" + "\n" + counter1);
-        button2.setText("الحمد الله" + "\n" + counter2);
-        button3.setText("لا إلاه إلا الله" + "\n" + counter3);
-        button4.setText("الله أكبر" + "\n" + counter4);
-
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 counter1++;
-                button1.setText("سبحان الله" + "\n" + counter1);
+                button1.setText(""+counter1);
             }
         });
 
@@ -41,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counter2 ++;
-                button2.setText("الحمد الله" + "\n" + counter2);
+                button2.setText(""+counter2);
             }
         });
 
@@ -49,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counter3 ++;
-                button3.setText("لا إلاه إلا الله" + "\n" + counter3);
+                button3.setText(""+counter3);
             }
         });
 
@@ -57,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counter4 ++;
-                button4.setText("الله أكبر" + "\n" + counter4);
+                button4.setText(""+counter4);
             }
         });
 
@@ -68,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
                 counter2=0;
                 counter3=0;
                 counter4=0;
-                button1.setText("سبحان الله" + "\n" + counter1);
-                button2.setText("الحمد الله" + "\n" + counter2);
-                button3.setText("لا إلاه إلا الله" + "\n" + counter3);
-                button4.setText("الله أكبر" + "\n" + counter4);
+                button1.setText(""+counter1);
+                button2.setText(""+counter2);
+                button3.setText(""+counter3);
+                button4.setText(""+counter4);
             }
         });
 
